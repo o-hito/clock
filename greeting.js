@@ -9,7 +9,7 @@ function saveName(text) {
 }
 
 function handleSubmit(event) {
-  event.preventDefault();
+  event.preventDefault(); // submit 했을 때 이름 사라지는 것 방지 그래야 밑에 input.value 로 값을 받지.
   const currentValue = input.value;
   paintGreeting(currentValue);
   saveName(currentValue);

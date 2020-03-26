@@ -44,7 +44,7 @@ function paintToDo(text) {
 }
 
 function handleSubmit(event) {
-  event.preventDefault();
+  event.preventDefault(); // value 가 없어지는 것 이외에 새로고침 해주는 것도 방지하는 것 같다.
   const currentValue = toDoinput.value;
   paintToDo(currentValue);
   toDoinput.value = "";
